@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Site</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    #back-to-top {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <nav>
+      <p class="logo">Rafael</p>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Alteração no link do botão "Hire me" -->
+      <a href="https://wa.me/11944427626" class="btn" target="_blank">Hire me</a>
+    </nav>
+  </div>
+  <div class="detail">
+    <img src="img/user.png" alt="Minha Imagem" class="profile-image">
+    <h1>Hello, I'm <span>Rafael</span></h1>
+    <p>This is my website to show all details and work <br>experience of web development</p>
+    <!-- Alteração no link do botão "Contact me" -->
+    <a href="#contact" class="btn">Contact me</a>
+  </div>
+
+  <!-- PROJETOS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="project-img">
+            <img src="img/jogo roguelike.png" alt="Foto de um site">
+          </div>
+          <div class="project-info">
+            <h2>ROGUELIKE GAME</h2>
+            <p>roguelike game made in python</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="project-img">
+            <img src="img/foto portifolio.png" alt="Foto de uma loja online">
+          </div>
+          <div class="project-info">
+            <h2>Portfolio</h2>
+            <p>portfolio made with HTML and CSS</p>
+          </div>
+        </div>
+      </div>
+      <!-- UM POUCO DE JAVA -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- CONTATOS -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-links">
+      <a href="https://www.instagram.com/rafaken_/" target="_blank" class="contact-link">
+        <img src="img/instagram.png" alt="Instagram">
+        Instagram
+      </a>
+
+      <a href="https://github.com/rafa-ken" target="_blank" class="contact-link">
+        <img src="img/github.png" alt="GitHub">
+        GitHub
+      </a>
+
+      <a href="https://www.linkedin.com/in/rafael-miyamoto-1b4706294/" target="_blank" class="contact-link">
+        <img src="img/linkedin.png" alt="Linkedin">
+        LinkedIn
+      </a>
+    </div>
+  </section>
+
+
+  
+
+
+
