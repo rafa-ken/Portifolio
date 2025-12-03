@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rafa-ken.github.io/Portifolio/sitemap.xml

@@ -1,104 +1,580 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio profissional de Rafael Ken Miyamoto - Desenvolvedor Full Stack.">
+  <meta name="keywords" content="Desenvolvedor, Full Stack.">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <title>Site</title>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    #back-to-top {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #007bff;
-      color: #fff;
-      padding: 10px;
-      border-radius: 50%;
-      cursor: pointer;
-    }
-  </style>
+  <title>Rafael Ken Miyamoto - Desenvolvedor Full Stack</title>
 </head>
 <body>
-  <div class="hero">
-    <nav>
-      <p class="logo">Rafael</p>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <!-- HEADER/NAVIGATION -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <span class="logo-text">Rafael<span class="highlight">.</span></span>
+      </div>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Início</a></li>
+        <li><a href="#about" class="nav-link">Sobre</a></li>
+        <li><a href="#skills" class="nav-link">Habilidades</a></li>
+        <li><a href="#experience" class="nav-link">Experiência</a></li>
+        <li><a href="#education" class="nav-link">Educação</a></li>
+        <li><a href="#projects" class="nav-link">Projetos</a></li>
+        <li><a href="#contact" class="nav-link">Contato</a></li>
       </ul>
-      <!-- Alteração no link do botão "Hire me" -->
-      <a href="https://wa.me/11944427626" class="btn" target="_blank">Hire me</a>
+      <a href="https://wa.me/5511944427626" class="btn btn-primary" target="_blank">
+        <i class="fab fa-whatsapp"></i> Contrate-me
+      </a>
     </nav>
-  </div>
-  <div class="detail">
-    <img src="img/user.png" alt="Minha Imagem" class="profile-image">
-    <h1>Hello, I'm <span>Rafael</span></h1>
-    <p>This is my website to show all details and work <br>experience of web development</p>
-    <!-- Alteração no link do botão "Contact me" -->
-    <a href="#contact" class="btn">Contact me</a>
-  </div>
+  </header>
 
-  <!-- PROJETOS -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="project-img">
-            <img src="img/jogo roguelike.png" alt="Foto de um site">
-          </div>
-          <div class="project-info">
-            <h2>ROGUELIKE GAME</h2>
-            <p>roguelike game made in python</p>
-          </div>
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="greeting">Olá, eu sou</p>
+        <h1 class="hero-title">Rafael Ken Miyamoto</h1>
+        <p class="hero-subtitle">
+          <span class="typing-text"></span>
+        </p>
+        <p class="hero-description">
+          Desenvolvedor Full Stack apaixonado por criar soluções inovadoras e eficientes. 
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Entre em Contato</a>
+          <a href="#projects" class="btn btn-secondary">Ver Projetos</a>
         </div>
-        <div class="swiper-slide">
-          <div class="project-img">
-            <img src="img/foto portifolio.png" alt="Foto de uma loja online">
-          </div>
-          <div class="project-info">
-            <h2>Portfolio</h2>
-            <p>portfolio made with HTML and CSS</p>
+        <div class="social-links">
+          <a href="https://github.com/rafa-ken" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/rafael-miyamoto-1b4706294/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/rafaken_/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="mailto:rafaelmiyamoto.rm15@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="img/profile.jpg" alt="Rafael Ken Miyamoto" class="profile-image">
+      </div>
+    </div>
+    <div class="scroll-down">
+      <a href="#about">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">Sobre Mim</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Sou um desenvolvedor Full Stack com sólida experiência em criar aplicações web modernas e escaláveis. 
+            Atualmente cursando Ciência da Computação no Insper, 
+            estou constantemente aprimorando minhas habilidades e aprendendo novas tecnologias.
+          </p>
+          <p>
+            Minha paixão por tecnologia me levou a desenvolver diversos projetos, desde aplicações de controle 
+            financeiro até jogos interativos. Tenho experiência com metodologias ágeis, versionamento de código 
+            e trabalho em equipe.
+          </p>
+          <div class="about-info">
+            <div class="info-item">
+              <i class="fas fa-user"></i>
+              <div>
+                <strong>Nome:</strong>
+                <p>Rafael Ken Miyamoto</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Localização:</strong>
+                <p>São Paulo, SP - Brasil</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email:</strong>
+                <p>rafaelmiyamoto.rm15@gmail.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>Telefone:</strong>
+                <p>(11) 94442-7626</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- UM POUCO DE JAVA -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
     </div>
   </section>
 
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Habilidades Técnicas</h2>
+      <div class="skills-content">
+        <div class="skills-category">
+          <h3><i class="fas fa-code"></i> Linguagens de Programação</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-js"></i>
+              <span>JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-java"></i>
+              <span>Java</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-database"></i>
+              <span>SQL</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fab fa-html5"></i>
+              <span>HTML5</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS3</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-react"></i>
+              <span>React</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-bootstrap"></i>
+              <span>Bootstrap</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3><i class="fas fa-server"></i> Backend & Frameworks</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fas fa-code-branch"></i>
+              <span>Django</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-node-js"></i>
+              <span>Node.js</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-fire"></i>
+              <span>Flask</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-database"></i>
+              <span>PostgreSQL</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3><i class="fas fa-tools"></i> Ferramentas & Outros</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fab fa-git-alt"></i>
+              <span>Git & GitHub</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-docker"></i>
+              <span>Docker</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 65%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-project-diagram"></i>
+              <span>Scrum/Agile</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-figma"></i>
+              <span>Figma</span>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2 class="section-title">Experiência Profissional & Projetos Acadêmicos</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>Scrum Master e Developer - Johnson & Johnson</h3>
+            <span class="timeline-date"><i class="far fa-calendar"></i> Mar 2024 - Jul 2024</span>
+            <p>
+              Atuei como Scrum Master e desenvolvedor no projeto Market Share System da Johnson & Johnson, 
+              garantindo a aplicação de metodologias ágeis e conduzindo cerimônias do Scrum (Daily, Planning, 
+              Review e Retrospective). Além de remover impedimentos e apoiar a equipe no cumprimento das entregas, 
+              contribuí para o desenvolvimento do software em Python e React.
+            </p>
+            <ul class="timeline-list">
+              <li>Condução de cerimônias do Scrum e aplicação de metodologias ágeis</li>
+              <li>Desenvolvimento em Python e React</li>
+              <li>Análise de dados utilizando biblioteca Pandas</li>
+              <li>Remoção de impedimentos e apoio à equipe</li>
+              <li>Garantia de qualidade e eficiência no processo de tomada de decisão</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>Product Owner & Developer - Ana Health</h3>
+            <span class="timeline-date"><i class="far fa-calendar"></i> Out 2023 - Dez 2023</span>
+            <p>
+              Atuei como Product Owner e desenvolvedor no projeto Cancellation Management System da Ana Health, 
+              uma plataforma digital de saúde. Fui responsável por definir e priorizar o backlog do produto, 
+              alinhar requisitos com as partes interessadas e traduzir necessidades de negócio em histórias de usuário.
+            </p>
+            <ul class="timeline-list">
+              <li>Definição e priorização do backlog do produto</li>
+              <li>Alinhamento de requisitos com stakeholders</li>
+              <li>Otimização do processo de cancelamento via automação</li>
+              <li>Integração com Pipedrive, Vindi, Discord e WhatsApp</li>
+              <li>Aumento do engajamento de clientes e coleta de insights para análise de churn</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="timeline-content">
+            <h3>Desenvolvedor Full Stack - Freelancer</h3>
+            <span class="timeline-date"><i class="far fa-calendar"></i> 2023 - Presente</span>
+            <p>
+              Desenvolvimento de aplicações web completas utilizando Python, Django, JavaScript e React. 
+              Criação de soluções personalizadas para clientes, incluindo sistemas de controle financeiro, 
+              portfólios profissionais e aplicações interativas.
+            </p>
+            <ul class="timeline-list">
+              <li>Desenvolvimento de interfaces responsivas e intuitivas</li>
+              <li>Implementação de APIs RESTful</li>
+              <li>Integração com bancos de dados relacionais</li>
+              <li>Versionamento de código com Git/GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education" class="education">
+    <div class="container">
+      <h2 class="section-title">Educação</h2>
+      <div class="education-content">
+        <div class="education-grid">
+          <div class="education-item">
+            <div class="education-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Ciência da Computação</h3>
+            <p class="institution">Insper</p>
+            <p class="period"><i class="far fa-calendar"></i> 2023 - Presente (Cursando)</p>
+            <p class="description">
+              Formação em Ciência da Computação com foco em desenvolvimento de software, algoritmos, estruturas de dados
+              e engenharia de sistemas. Participação em projetos acadêmicos e atividades extracurriculares relacionadas à tecnologia.
+            </p>
+          </div>
+
+          <div class="education-item">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Projetos em Destaque</h2>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="game">Games</button>
+      </div>
+      
+      <div class="swiper projectsSwiper">
+        <div class="swiper-wrapper">
+          <!-- Project 1 -->
+          <div class="swiper-slide" data-category="game python">
+            <div class="project-card">
+              <div class="project-img">
+                <img src="img/jogo roguelike.png" alt="Roguelike Game">
+                <div class="project-overlay">
+                  <a href="https://github.com/rafa-ken" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Roguelike Game</h3>
+                <p>Jogo roguelike desenvolvido em Python com mecânicas procedurais, combate estratégico e sistema de progressão.</p>
+                <div class="project-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">Pygame</span>
+                  <span class="tag">Game Dev</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="swiper-slide" data-category="web">
+            <div class="project-card">
+              <div class="project-img">
+                <img src="img/foto portifolio.png" alt="Portfolio Website">
+                <div class="project-overlay">
+                  <a href="https://github.com/rafa-ken" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Portfolio Profissional</h3>
+                <p>Site de portfólio responsivo e moderno desenvolvido com HTML5, CSS3 e JavaScript vanilla.</p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="swiper-slide" data-category="web python">
+            <div class="project-card">
+              <div class="project-img">
+                <img src="img/img.jpg" alt="Sistema de Controle Financeiro">
+                <div class="project-overlay">
+                  <a href="https://github.com/rafa-ken" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Sistema de Controle Financeiro</h3>
+                <p>Aplicação web full stack para gerenciamento de finanças pessoais com dashboard interativo e relatórios.</p>
+                <div class="project-tags">
+                  <span class="tag">Django</span>
+                  <span class="tag">PostgreSQL</span>
+                  <span class="tag">Chart.js</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Entre em Contato</h2>
+      <p class="section-subtitle">
+        Interessado em trabalhar juntos? Vamos conversar sobre seu projeto!
+      </p>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Localização</h3>
+              <p>São Paulo, SP - Brasil</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Email</h3>
+              <p>rafaelkenmiyamoto@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Telefone</h3>
+              <p>(11) 94442-7626</p>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <h3>Redes Sociais</h3>
+            <div class="social-icons">
+              <a href="https://github.com/rafa-ken" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/rafael-miyamoto-1b4706294/" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/rafaken_/" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://wa.me/5511944427626" target="_blank" class="social-icon">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Nome Completo</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Assunto</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fas fa-paper-plane"></i> Enviar Mensagem
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2024 Rafael Ken Miyamoto. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="backToTop" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- SCRIPTS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
-
-  <!-- CONTATOS -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="contact-links">
-      <a href="https://www.instagram.com/rafaken_/" target="_blank" class="contact-link">
-        <img src="img/instagram.png" alt="Instagram">
-        Instagram
-      </a>
-
-      <a href="https://github.com/rafa-ken" target="_blank" class="contact-link">
-        <img src="img/github.png" alt="GitHub">
-        GitHub
-      </a>
-
-      <a href="https://www.linkedin.com/in/rafael-miyamoto-1b4706294/" target="_blank" class="contact-link">
-        <img src="img/linkedin.png" alt="Linkedin">
-        LinkedIn
-      </a>
-    </div>
-  </section>
+</body>
 
 
   
